@@ -103,6 +103,26 @@ section {
 }
 
 
+/* SHADOWS */
+.shadow-xs {
+    box-shadow: var(--box-shadow-xs);
+}
+.shadow-sm {
+    box-shadow: var(--box-shadow-sm);
+}
+
+.shadow-md {
+    box-shadow: var(--box-shadow-md);
+}
+
+.shadow-lg {
+    box-shadow: var(--box-shadow-lg);
+}
+
+.shadow-xl {
+    box-shadow: var(--box-shadow-xl);
+}
+
 /* PADDINGS */
 
 

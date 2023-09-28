@@ -91,6 +91,15 @@
     }
 
     .wrapper-2col {
+        text-align: center;
+        align-items: center;;
+    }
+
+    .wrapper-2col button {
+        margin: 0 auto;
+    }
+
+    .wrapper-2col {
         flex-direction: column;
         gap: 2rem;
     }
@@ -202,23 +211,48 @@
 }
 
 
-/* CTA */
 .section_about li {
     list-style: disc inside;
 }
 
+/* CTA */
 .section_cta h3 {
     font-size: var(--heading-h3);
 }
 
 .cta_card {
     border-radius: var(--border-radius-large);
-    background-color: var(--main-white-color);
+    background-color: var(--main-yellow-color);
     padding: 48px 62px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cta_card .cta_blob {
+    box-shadow: none;
+    position: absolute;
+    filter: drop-shadow(0px 2px 4px rgba(16, 24, 40, 0.06)) drop-shadow(0px 4px 8px rgba(16, 24, 40, 0.10));
+}
+
+.cta_card .cta_blob-top {
+    top: -4rem;
+    left: -4rem;
+}
+
+.cta_card .cta_blob-bottom {
+    right: -4rem;
+    bottom: -4rem;
+}
+
+.cta_card button {
+    background-color: var(--main-dark-color);
+    color: var(--main-white-color);
+    border: none;
 }
 
 .cta_wrapper {
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .cta_wrapper .col {
@@ -230,7 +264,7 @@ form {
     justify-content: space-between;
     align-items: center;
     border-radius: 6px;
-    border: 1px solid rgba(51, 51, 51, 0.25);
+    /* border: 1px solid rgba(51, 51, 51, .05); */
     background: var(--main-white-color);   
     overflow: hidden;
     max-width: 24rem;
@@ -270,7 +304,6 @@ form button:hover {
     border-radius: var(--border-radius-large);
     background-color: #1d1d1d;
     color: var(--main-white-color);
-    box-shadow: var(--box-shadow-lg);
 
     display: flex;
     padding: 32px 24px;
